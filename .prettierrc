@@ -3,5 +3,6 @@
   "trailingComma": "es5",
   "semi": false,
   "arrowParens": "avoid",
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "no-non-null-assertion": true
 }
