@@ -6,16 +6,24 @@
   "extends": [
     "standard-with-typescript",
     "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
     "project": "./tsconfig.json",
-    "extraFileExtensions": [".json"]
+    "extraFileExtensions": [".json", ".html"]
   },
-  "plugins": ["react", "prettier"],
-  "rules": { "prettier/prettier": "error" },
+  "plugins": ["react", "html", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "react/prop-types": "off"
+  },
   "ignorePatterns": ["*.json"],
   "settings": {
     "react": {

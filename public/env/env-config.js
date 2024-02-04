@@ -1,0 +1,5 @@
+window.REACT_APP_ISSUER = 'https://secure.ite.pepsico.com/oauth2/default'
+window.REACT_APP_CLIENT_ID = '0oa1lmt6oaqGmWvN50h8'
+window.REACT_APP_PKCE = 'true'
+window.REACT_APP_REDIRECT_URI = 'http://localhost:3000/login'
+window.REACT_APP_LOGOUT_URI = 'http://localhost:3000/logout'
